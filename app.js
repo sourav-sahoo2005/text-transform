@@ -1,18 +1,16 @@
 const usertext = document.getElementById('User_Text')
+
 const upbtn = document.getElementById('upbtn')
+const lowbtn = document.getElementById('lowbtn')
 // usertext.innerText= "hey iam sourav"
 
 const uppercase = ()=>{
-    let utext = usertext.value;
-    up = utext.toUpperCase();
-    // console.log(utext.toUpperCase())
-    console.log(up)
-    usertext.innerText.value = up;
-
-    // usertext.innerText = "hey this is sourav"
-
-    // usertext.innerHTML= utext.
-
+    usertext.value =  usertext.value.toUpperCase();
 }
 
 upbtn.addEventListener('click',uppercase)
+
+const lowercase = ()=>{
+    usertext.value =  usertext.value.toLowerCase();
+}
+lowbtn.addEventListener('click',lowercase)
